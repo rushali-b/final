@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="drop.html"> -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+ 
+ 
+ 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ 
+ 
+ 
+        <link rel="stylesheet" href="css/bootstrap-multiselect/bootstrap-multiselect.css" type="text/css">
+ 
+        <script type="text/javascript" src="js/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shri Mata Vaishno Devi University</h1>
+      <h2>Student Registration From</h2>
+      <div class="form-wrapper">
+          <form action="">
+             
+              <div class="form-item">
+                  <label for="fullname">Student Name:</label>
+                  <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+              </div>
+              <div class="form-item">
+                  <label for="username">Father's Name:</label>
+                  <input type="text" name="username" id="fathersname" placeholder="Father's Full Name" required>
+              </div>
+              <div class="form-item">
+                  <label for="username">Mother's Name:</label>
+                  <input type="text" name="username" id="mothersname" placeholder="Mother's Full Name" required>
+              </div>
+
+              <div class="form-item">
+                  <label for="gender">Gender:</label>
+                  <div class="genders">
+                      <p>Male</p> <input type="radio" name="gender" id="gender" value="male" required>
+                      <p>Female</p> <input type="radio" name="gender" id="gender" value="female">
+                      <p>Other</p> <input type="radio" name="gender" id="gender" value="other">
+                  </div>
+              </div>
+              <div class="form-item">
+                  <label for="email">Date of Birth</label>
+                  <input type="date" name="DOB" id="DOB" required>
+              </div>
+              <div class="form-item">
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+              </div>
+              <div class="form-item">
+                  <label for="level">Level:</label>
+                  <select name="level" id="level">
+                      <option value="highschool">Bachelors </option>
+                      <option value="highschool">Masters</option>
+                      <option value="highschool">Phd</option>
+                  </select>
+              </div>
+              <div class="form-item">
+                  <label for="department">Department:</label>
+                  <select name="department" id="department">
+                      <option value="electrical">Electronics and Communication Engineering</option>
+                      <!-- <option value="electrical">Computer Engineering</option>
+                      <option value="electrical">Software Engineering</option>
+                      <option value="electrical">Civil Engineering</option> -->
+                  </select>
+              </div>
+
+              <div class="form-item">
+                  <label for="phonenumber">Tel/Mobile:</label>
+                  <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+              </div>
+              <hr>
+              <h3>Permanent Address</h3>
+              <div class="form-item">
+                  <label for="pstate">State:</label>
+                  <input type="text" name="pstate" id="pstate" placeholder="State" required>
+              </div>
+              <div class="form-item">
+                  <label for="pcity">City:</label>
+                  <input type="text" name="pcity" id="pcity" placeholder="City" required>
+              </div>
+              <div class="form-item">
+                  <label for="pzip">Zip Code:</label>
+                  <input type="number" name="pzip" id="pzip" placeholder="Zip Code" required>
+              </div>
+              <div class="form-item">
+                  <label for="pphonenumber">Tel/Mobile:</label>
+                  <input type="tel" name="pphonenumber" id="pphonenumber" placeholder="XXX XXX XXXX" required>
+              </div>
+              <hr>
+              <h3>Temporary Address</h3>
+              <div class="same-perm">
+                  <label for="sameaspermanent">Same as Permanent Address:</label> <input type="checkbox" name="sameaspermanent" id="sameaspermanent">
+              </div>
+              <div class="form-item">
+                  <label for="tstate">State:</label>
+                  <input type="text" name="tstate" id="tstate" placeholder="State" required>
+              </div>
+              <div class="form-item">
+                  <label for="tcity">City:</label>
+                  <input type="text" name="tcity" id="tcity" placeholder="City" required>
+              </div>
+              <div class="form-item">
+                  <label for="tzip">Zip Code:</label>
+                  <input type="number" name="tzip" id="tzip" placeholder="Zip Code" required>
+              </div>
+              <div class="form-item">
+                  <label for="tphonenumber">Tel/Mobile:</label>
+                  <input type="tel" name="tphonenumber" id="tphonenumber" placeholder="XXX XXX XXXX" required>
+              </div>
+
+              <hr>
+              <div class="forms">
+                <h2>SEMESTER</h2>
+              <div id="check"></div>
+              <select data-target="secondList" class="firstList selectFilter">
+                
+                <option value="-1">Choose Semester</option>
+                <option data-ref="one" >1</option>
+                <option data-ref="two" >2</option>
+                <option data-ref="third">3</option>
+                <option data-ref="four" >4</option>
+                <option data-ref="five" >5</option>
+                <option data-ref="six">6</option>
+                <option data-ref="seven" >7</option>
+                <option data-ref="eight">8</option>
+              </select>
+              <br />
+              <br />
+              
+              <h2>CORE SUBJECTS</h2>
+              <select data-target="thirdList" class="secondList selectFilter" id="multi-select-demo" multiple="multiple">
+                <option value="-1">Core Subjects</option>
+                <option data-ref="em" data-belong="one" >Engineering Mathematics</option>
+                <option data-ref="ep" data-belong="one">Engineering Physics</option>
+                <option data-ref="epl" data-belong="one">Engineering Physics Lab</option>
+                <option data-ref="be" data-belong="one">Basic Electronics</option>
+                <option data-ref="bel" data-belong="one">Basic Electronics Lab</option>
+                <option data-ref="pwc" data-belong="one">Programming with C language</option>
+                <option data-ref="pwcl" data-belong="one">Programming with C language Lab</option>
+                <option data-ref="pc" data-belong="one">Professional Communication</option>
+                <option data-ref="pcl" data-belong="one">Professional Communication Lab</option>
+                <option data-ref="mw" data-belong="one">Mechanical Workshop</option> 
+
+                <option data-ref="pp" data-belong="two" >Programming with Python</option>
+                <option data-ref="ppl" data-belong="two" >Programming with Python Lab</option>
+                <option data-ref="em" data-belong="two" >Electronic Circuits And Simulation</option>
+                <option data-ref="em" data-belong="two" >Electronic Circuits And Simulation lab</option>
+                <option data-ref="em" data-belong="two" >Network Analysis and Synthesis</option>
+                <option data-ref="em" data-belong="two" >Engineering Mathematics - II</option>
+                <option data-ref="em" data-belong="two" >Engineering Graphics with CAD</option>
+                <option data-ref="em" data-belong="two" >Engineering Graphics with CAD Lab</option> 
+                <option data-ref="em" data-belong="two" >Language Lab - I</option> 
+
+                <option data-ref="pp" data-belong="third" >Digital Electronics</option>
+                <option data-ref="ppl" data-belong="third">Digital Electronics Lab</option>
+                <option data-ref="em" data-belong="third" >Analog Communication Engineering</option>
+                <option data-ref="em" data-belong="third" >Analog Communication Engineering Lab</option>
+                <option data-ref="em" data-belong="third" >Data Structures with C</option>
+                <option data-ref="em" data-belong="third" >Data Structures with C Lab</option>
+                <option data-ref="em" data-belong="third" >Signal and System</option> 
+                <option data-ref="em" data-belong="third" >Introduction to Logic</option> 
+                <option data-ref="em" data-belong="third" >EVS (N/C)</option> 
+                
+                <option data-ref="pp" data-belong="four" >Linear Integrated Circuits and Applications 3-0-0 </option>
+                <option data-ref="ppl" data-belong="four">Linear Integrated Circuits and Applications Lab 0-0-2</option>
+                <option data-ref="em" data-belong="four" >Digital Communication Engineering 3-0-0 </option>
+                <option data-ref="em" data-belong="four" >Digital Communication Engineering Lab 0-0-2</option>
+                <option data-ref="em" data-belong="four" >Electromagnetic Field Theory 3-0-0 </option>
+                <option data-ref="em" data-belong="four" >Microprocessor and Interfacing 3-0-0</option>
+                <option data-ref="em" data-belong="four" >Microprocessor and Interfacing Lab 0-0-2 </option> 
+                <option data-ref="em" data-belong="four" >MATLAB Programming 1-0-2</option> 
+                <option data-ref="em" data-belong="four" >Probability Theory and Stochastic Process 3-0-0</option> 
+
+                <option data-ref="pp" data-belong="five" >Constitution of India (N/C) </option>
+                <option data-ref="ppl" data-belong="five">Digital Signal Processing</option>
+                <option data-ref="em" data-belong="five" >Digital Signal Processing Lab</option>
+                <option data-ref="em" data-belong="five" >Control Systems</option>
+                <option data-ref="em" data-belong="five" >Embedded Electronics and Microcontrollers</option>
+                <option data-ref="em" data-belong="five" >Embedded Electronics and Microcontrollers Lab</option>
+                <option data-ref="em" data-belong="five" >Antenna and Wave Propagation</option> 
+                <option data-ref="em" data-belong="five" >Digital System Design using Verilog</option> 
+                <option data-ref="em" data-belong="five" >Verilog Lab</option> 
+                <option data-ref="em" data-belong="five" >Mini Project - I</option> 
+
+                <option data-ref="pp" data-belong="six" >Microwave Engineering </option>
+                <option data-ref="ppl" data-belong="six">Microwave Engineering Lab</option>
+                <option data-ref="em" data-belong="six" >IC Fabrication and VLSI</option>
+                <option data-ref="em" data-belong="six" >VLSI Lab</option>
+                <option data-ref="em" data-belong="six" >Internet of Things</option>
+                <option data-ref="em" data-belong="six" >Internet of Things Lab</option>
+                <option data-ref="em" data-belong="six" >Communication and Data Network</option> 
+                <option data-ref="em" data-belong="six" >Minor Project - II</option> 
+             
+                <option data-belong="seven">Optical Fiber Communication</option>
+                <option data-belong="seven">Optical Fiber Communication Lab</option>
+                <option data-belong="seven">Summer Internship</option>
+              </select>
+              <br />
+              <br />
+             
+              <h2>SCHOOL ELECTIVE</h2>
+<select data-target="thirdList" class="secondList selectFilter">
+	<option value="-1">School Elective</option>
+	<option data-belong="five" >Satellite Communication</option>
+	<option data-belong="six">Virtual Instrumentation Using Lab View</option>
+	<option data-belong="six">Introduction to Wireless Networks</option>
+</select>
+ <br/>
+ <br/>
+ <h2>OPEN ELECTIVE</h2>
+<select data-target="thirdList" class="secondList selectFilter">
+	<option value="-1">Open Elective</option>
+	<option data-belong="six" >Leadership Development in Engineers</option>
+	<option data-belong="six">Waste to Energy</option>
+	<option data-belong="six">Basics of Marketing Management</option>
+  <option data-belong="six">Foundation of Cognitive Science</option>
+  <option data-belong="six">Introduction to Human Rights</option>
+  <option data-belong="seven">Open Elective-II</option>
+</select>
+<br/>
+<br/>
+ <h2>SCHOOL ELECTIVE-A</h2>
+
+<select data-target="thirdList" class="secondList selectFilter">
+	<option value="-1">School Elective-A</option>
+	<option data-belong="seven">Machine Learning</option>
+</select>
+<br/>
+<br/>
+ <h2>SCHOOL ELECTIVE-B</h2>
+<select data-target="thirdList" class="secondList selectFilter">
+	<option value="-1">School Elective-B</option>
+	<option data-belong="seven">Information Theory and Coding</option>
+</select>
+</div>
+
+  <br/>
+  <hr>            
+           
+
+              <button class="register" type="submit">Register</button>
+          </form>
+          </form>
+      </div>
+
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+    <script type="text/javascript">
+ 
+      $(document).ready(function() {
+   
+          $('#multi-select-demo').multiselect();
+   
+      });
+   
+  </script>
+    <script>var expanded = false;
+
+      function showCheckboxes() {
+        var checkboxes = document.getElementById("checkboxes");
+        if (!expanded) {
+          checkboxes.style.display = "block";
+          expanded = true;
+        } else {
+          checkboxes.style.display = "none";
+          expanded = false;
+        }
+      }</script>
+  </body>
+</html>
